@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Spacial Axis - v0.1</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="loading-screen">
+        <div class="loading-content">
+            <h1>SPACIAL AXIS</h1>
+            <div class="version">v0.1</div>
+            <div class="loading-bar-container">
+                <div class="loading-bar" id="loading-bar"></div>
+            </div>
+            <div class="loading-text" id="loading-text">Initializing universe...</div>
+        </div>
+    </div>
+    
+    <div id="ui-overlay">
+        <div id="info-panel">
+            <div id="planet-name">Solar System</div>
+            <div id="planet-info">Drag to orbit • Pinch/scroll to zoom • Select a planet below</div>
+        </div>
+        
+        <div id="controls-hint" class="hidden">
+            <span id="distance-display">Distance: --</span>
+        </div>
+        
+        <div id="planet-selector">
+            <div class="planet-btn" data-planet="sun">
+                <div class="planet-icon sun-icon"></div>
+                <span>Sol</span>
+            </div>
+            <div class="planet-btn" data-planet="mercury">
+                <div class="planet-icon mercury-icon"></div>
+                <span>Aether</span>
+            </div>
+            <div class="planet-btn" data-planet="venus">
+                <div class="planet-icon venus-icon"></div>
+                <span>Aphrodite</span>
+            </div>
+            <div class="planet-btn" data-planet="earth">
+                <div class="planet-icon earth-icon"></div>
+                <span>Gaia</span>
+            </div>
+            <div class="planet-btn" data-planet="mars">
+                <div class="planet-icon mars-icon"></div>
+                <span>Ares</span>
+            </div>
+            <div class="planet-btn" data-planet="jupiter">
+                <div class="planet-icon jupiter-icon"></div>
+                <span>Zeus</span>
+            </div>
+            <div class="planet-btn" data-planet="saturn">
+                <div class="planet-icon saturn-icon"></div>
+                <span>Kronos</span>
+            </div>
+            <div class="planet-btn" data-planet="uranus">
+                <div class="planet-icon uranus-icon"></div>
+                <span>Ouranos</span>
+            </div>
+            <div class="planet-btn" data-planet="neptune">
+                <div class="planet-icon neptune-icon"></div>
+                <span>Poseidon</span>
+            </div>
+            <div class="planet-btn" data-planet="nemesis">
+                <div class="planet-icon nemesis-icon"></div>
+                <span>Nemesis</span>
+            </div>
+        </div>
+        
+        <div id="speed-control">
+            <label>Time Scale:</label>
+            <input type="range" id="speed-slider" min="0" max="500" value="10">
+            <span id="speed-value">1x</span>
+        </div>
+    </div>
+    
+    <canvas id="canvas"></canvas>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
